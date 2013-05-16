@@ -1,5 +1,80 @@
 # Scalding #
 
+### Version 0.8.4 ###
+* ISSUE 340: Upgrade to Cascading 2.1.5
+* ISSUE 327,329,337: adds sample method with seed in RichPipe
+* ISSUE 323: Remove untyped write from TypedPipe (must write to Mappable[U])
+* ISSUE 321: pulls out scalding-date and scalding-args as separate projects
+
+#### Contributions ####
+27 commits
+* P. Oscar Boykin: 13 commits
+* willf: 4 commits
+* Argyris Zymnis: 3 commits
+* Sam Ritchie: 3 commits
+* Tim Chklovski: 1 commits
+* Chris Severs: 1 commits
+* Rickey Visinski: 1 commits
+* David Shimon: 1 commits
+
+### Version 0.8.3 ###
+* ISSUE 312: dramatic speedup for sortWithTake/sortedTake if you take many items
+* ISSUE 307: Read support for JsonLine support (previously, just write)
+* ISSUE 305: Adds a shuffle-method to RichPipe (for sampling/sharding)
+* ISSUE 299: limit method for Typed-safe API.
+* ISSUE 296: Fixes self-joins in the Type-safe API.
+* ISSUE 295: unpack-all syntax (use Fields.ALL) for TupleUnpacker
+* ISSUE 280: Improvements to AbsoluteDuration
+* ISSUE 277: Upgrade to Cascading 2.0.7
+
+#### Contributions ####
+75 commits total.
+
+* P. Oscar Boykin: 25 commits
+* Alex Dean: 15 commits
+* Argyris Zymnis: 11 commits
+* Sam Ritchie: 4 commits
+* Timothy Chklovski: 4 commits
+* Dan McKinley: 4 commits
+* Aaron Siegel: 3 commits
+* Tim Chklovski: 3 commits
+* Ashutosh Singhal: 2 commits
+* João Oliveirinha: 2 commits
+* Arkajit Dey: 1 commits
+* Avi Bryant: 1 commits
+
+### Version 0.8.2 ###
+* ISSUE 269: Improvements to AbsoluteDuration.fromMillisecs and some new APIs
+* ISSUE 256: Weighted page-rank with the Matrix API
+* ISSUE 249: Fix for Matrix.scala missing some obvious operations
+* ISSUE 246: Partition in RichPipe (create a new field, and then groupBy on it)
+* ISSUE 241: Fix joinWithLarger with a custom joiner
+* ISSUE 234. 238: Etsy sync: periodic date jobs, ability to add traps, more flexible Args
+* ISSUE 230: shard and groupRandomly on RichPipe
+* ISSUE 229: Initial skew-Join implementation (please test!)
+* ISSUE 228 - 233, 265: Improve Typed-API
+* ISSUE 221: Combinatorics in scalding.mathematics
+
+#### Contributions ####
+106 commits total.
+
+* P. Oscar Boykin: 29 commits
+* Krishnan Raman: 16 commits
+* Arkajit Dey: 15 commits
+* Avi Bryant: 7 commits
+* Edwin Chen: 6 commits
+* Aaron Siegel: 5 commits
+* Koert Kuipers: 5 commits
+* Argyris Zymnis: 4 commits
+* Sam Ritchie: 4 commits
+* Chris Severs: 4 commits
+* Brad Greenlee: 3 commits
+* Wil Stuckey: 2 commits
+* Dan McKinley: 2 commits
+* Matteus Klich: 2 commits
+* Josh Devins: 1 commits
+* Steve Mardenfeld: 1 commits
+
 ### Version 0.8.1 ###
 * ISSUE 220: Etsy date improvements and local-mode tap improvements
 * ISSUE 219: scald.rb fix
